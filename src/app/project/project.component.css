@@ -1,0 +1,12 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("./images/git-profile.jpeg");
+  background-size: cover;
+}
+.grey-button {
+  background-color: #2f3334;
+  color: white;
+}

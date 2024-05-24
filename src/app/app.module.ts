@@ -11,12 +11,20 @@ import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectComponent } from './project/project.component';
+import { ProjectDivComponent } from './project-div/project-div.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectComponent,
+    ProjectDivComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

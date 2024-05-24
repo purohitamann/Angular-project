@@ -1,0 +1,72 @@
+.techStack {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  gap: 20px;
+  padding: 10%;
+}
+.imagesDiv {
+  z-index: 1;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  gap: 20px;
+  width: 250px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.imagesDiv img {
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: 10%;
+}
+
+.about {
+  z-index: 1;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  height: 247px;
+  border-radius: 10px;
+  padding: 2%;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48.76px;
+  text-align: left;
+}
+
+.info h1 {
+  z-index: 1;
+  color: white;
+  margin-left: -250%;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 48.76px;
+  text-align: left;
+}
+
+.workExperience {
+  height: auto;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 2%;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+}

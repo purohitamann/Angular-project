@@ -9,3 +9,83 @@
 body {
   font-family: Montserrat, sans-serif;
 }
+.blur-01 {
+  background-color: #9f9c97;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  min-width: 350px;
+
+  top: -276px;
+  left: 488px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: 0;
+}
+.blur-02 {
+  background-color: #9f9c97;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  min-width: 350px;
+
+  top: 976px;
+  left: 88px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.blur-03 {
+  background-color: #9f9c97;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  min-width: 350px;
+
+  top: 1376px;
+  left: 1588px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: -2;
+}
+
+.blur-06 {
+  background-color: #9f9c97;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  min-width: 350px;
+  top: 1876px;
+  left: 18px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: -2;
+}
+
+.blur-04 {
+  background-color: #9f9c97;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  min-width: 350px;
+
+  top: 2576px;
+  left: 1488px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: -1;
+}
+.blur-05 {
+  background-color: #9f9c97;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  min-width: 350px;
+
+  top: 2076px;
+  left: 1688px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: -1;
+}

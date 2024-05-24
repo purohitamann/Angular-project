@@ -1,0 +1,22 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ project.title }}</mat-card-title>
+    <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="project.imageUrl"
+    [alt]="'Photo of ' + project.title"
+  />
+  <mat-card-content>
+    <p>
+      {{ project.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button class="grey-button" [href]="project.url"
+      >View On Github</a
+    >
+  </mat-card-actions>
+</mat-card>
