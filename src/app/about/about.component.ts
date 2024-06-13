@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {workExperience} from './data';
 @Component({
   selector: 'app-about',
@@ -20,4 +20,5 @@ export class AboutComponent {
 
   ];
   workExperiences = workExperience;
+  @Input() darkMode!: boolean;
 }

@@ -1,4 +1,4 @@
-<section class="techStack" id="about">
+<section class="techStack" id="about-div" [ngClass]="{ 'dark-mode': darkMode }">
   <div>
     <h1>About</h1>
   </div>
@@ -26,8 +26,15 @@
           }}
           - {{ experience.endDate }})
         </h3>
-        <p><strong>Description:</strong></p>
-        <p>{{ experience.description }}</p>
+
+        <!-- <p class="description">
+          {{ experience.description.replaceAll(" • ", "• ") }}
+        </p> -->
+        <ul class="description">
+          <li *ngFor="let description of experience.description.split('•')">
+            {{ description }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>

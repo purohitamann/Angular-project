@@ -3,6 +3,6 @@ export interface Project {
     title: string;
     subtitle: string;
     imageUrl: string;
-    url?: string; // Optional property
+    url?: string; 
     description: string;
 }

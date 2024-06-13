@@ -2,15 +2,56 @@
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet"
 />
+
 <div class="blur-01"></div>
-<app-header></app-header>
+<div class="darkModeBtn">
+  <input
+    type="checkbox"
+    id="darkMode"
+    [(ngModel)]="darkMode"
+    class="toggle-checkbox"
+  />
+  <label for="darkMode" class="toggle-label">
+    <!-- <span class="toggle-icon">
+      <mat-icon *ngIf="!darkMode">brightness_7</mat-icon>
+
+      <mat-icon *ngIf="darkMode">brightness_2</mat-icon>
+
+    </span> -->
+    <span class="toggle-icon">
+      <mat-icon
+        *ngIf="!darkMode"
+        [ngStyle]="{ color: darkMode ? 'white' : 'black' }"
+        >brightness_7</mat-icon
+      >
+      <!-- Sun icon -->
+      <mat-icon
+        *ngIf="darkMode"
+        [ngStyle]="{ color: darkMode ? 'white' : 'black' }"
+        >brightness_2</mat-icon
+      >
+      <!-- Moon icon -->
+    </span>
+  </label>
+</div>
+<app-header [darkMode]="darkMode" [location]="location"></app-header>
+<app-home [darkMode]="darkMode" [Info]="info"></app-home>
+<app-about
+  [darkMode]="darkMode"
+  [ngClass]="{ 'dark-mode': darkMode }"
+></app-about>
+<app-project-div
+  [darkMode]="darkMode"
+  [ngClass]="{ 'dark-mode': darkMode }"
+></app-project-div>
+<app-contact [darkMode]="darkMode" [contact]="contact"></app-contact>
+<app-footer
+  [darkMode]="darkMode"
+  [ngClass]="{ 'dark-mode': darkMode }"
+  [name]="name"
+></app-footer>
+
 <div class="blur-02"></div>
-<app-home></app-home>
-<div class="blur-06"></div>
-<app-about></app-about>
-<div class="blur-03"></div>
-<app-project-div></app-project-div>
-<div class="blur-04"></div>
-<div class="blur-05"></div>
-<app-contact></app-contact>
-<app-footer></app-footer>
+<div class="background">
+  <div *ngFor="let blur of blurs" class="{{ blur }}"></div>
+</div>

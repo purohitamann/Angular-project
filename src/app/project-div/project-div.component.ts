@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { projectData } from '../project-div/data';
 @Component({
   selector: 'app-project-div',
@@ -7,5 +7,5 @@ import { projectData } from '../project-div/data';
 })
 export class ProjectDivComponent {
   projects = projectData;
-
+  @Input() darkMode!: boolean;
 }

@@ -1,8 +1,9 @@
-<section class="projectDiv">
+<section class="projectDiv" [ngClass]="{ 'dark-mode': darkMode }">
   <div class="container">
-    <div id="project"><h1>Projects</h1></div>
+    <div id="project" class="header"><h1>Projects</h1></div>
     <div>
       <app-project
+        [darkMode]="darkMode"
         *ngFor="let project of projects"
         [project]="project"
       ></app-project>

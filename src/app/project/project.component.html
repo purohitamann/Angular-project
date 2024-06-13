@@ -1,6 +1,6 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
+<mat-card class="card" [ngClass]="{ 'dark-mode': darkMode }">
+  <mat-card-header class="subtitle">
+    <div mat-card-avatar class="image"></div>
     <mat-card-title>{{ project.title }}</mat-card-title>
     <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
   </mat-card-header>
@@ -9,8 +9,9 @@
     [src]="project.imageUrl"
     [alt]="'Photo of ' + project.title"
   />
+
   <mat-card-content>
-    <p>
+    <p class="description">
       {{ project.description }}
     </p>
   </mat-card-content>
@@ -20,3 +21,6 @@
     >
   </mat-card-actions>
 </mat-card>
+<script>
+  console.log(project.imageUrl);
+</script>

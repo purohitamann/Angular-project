@@ -9,4 +9,5 @@ import { Project } from '../project-div/project.model';
 export class ProjectComponent {
 
   @Input() project!: Project;
+  @Input() darkMode!: boolean;
 }

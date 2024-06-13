@@ -3,15 +3,24 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  padding: 5%;
-  margin: 0;
-  z-index: 1;
+  padding-left: 3%;
+
+  z-index: 2;
   /* background-color: #f5f5f5; */
 }
-.container {
+.header {
+  font-size: 30px;
 }
 .container div {
   display: flex;
   flex-direction: row;
   gap: 60px;
+}
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.container.dark-mode {
+  background-color: #6b6b6b;
+  color: #fff;
 }

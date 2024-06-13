@@ -1,13 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+
+  transition: 12s ease-in-out;
+  /* background-color: #f5f5f5; */
   color: #2f3334;
+}
+*.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.background {
+  overflow: hidden;
 }
 
 body {
   font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.5s ease;
 }
 .blur-01 {
   background-color: #9f9c97;
@@ -20,16 +31,16 @@ body {
   left: 488px;
   border: 764px;
   filter: blur(200px);
-  z-index: 0;
+  z-index: 1;
 }
 .blur-02 {
-  background-color: #9f9c97;
+  background-color: #747474;
   position: absolute;
-  width: 500px;
-  height: 500px;
-  min-width: 350px;
+  width: 200px;
+  height: 200px;
+  min-width: 500px;
 
-  top: 976px;
+  top: 1476px;
   left: 88px;
   border: 764px;
   filter: blur(200px);
@@ -37,27 +48,26 @@ body {
 }
 
 .blur-03 {
-  background-color: #9f9c97;
+  background-color: #929292;
   position: absolute;
   width: 500px;
   height: 500px;
-  min-width: 350px;
 
-  top: 1376px;
-  left: 1588px;
-  border: 764px;
+  top: 700px;
+  right: 250px;
+
   filter: blur(200px);
-  z-index: -2;
+  z-index: 1;
 }
-
+/* #9f9c97; */
 .blur-06 {
   background-color: #9f9c97;
   position: absolute;
-  width: 500px;
-  height: 500px;
-  min-width: 350px;
-  top: 1876px;
-  left: 18px;
+  width: 200px;
+  height: 200px;
+  max-width: 250px;
+  top: 3200px;
+  left: 500px;
   border: 764px;
   filter: blur(200px);
   z-index: -2;
@@ -66,12 +76,11 @@ body {
 .blur-04 {
   background-color: #9f9c97;
   position: absolute;
-  width: 500px;
-  height: 500px;
-  min-width: 350px;
+  width: 1000px;
+  height: 700px;
 
-  top: 2576px;
-  left: 1488px;
+  top: 3276px;
+  right: 988px;
   border: 764px;
   filter: blur(200px);
   z-index: -1;
@@ -80,12 +89,89 @@ body {
   background-color: #9f9c97;
   position: absolute;
   width: 500px;
-  height: 500px;
-  min-width: 350px;
+  height: 800px;
+  /* max-width: 350px; */
 
-  top: 2076px;
-  left: 1688px;
-  border: 764px;
+  top: 1976px;
+  left: 9px;
+
   filter: blur(200px);
   z-index: -1;
+}
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.darkModeBtn {
+  position: fixed;
+  z-index: 3;
+  color: #fff;
+}
+@media screen and (max-width: 400px) {
+  body {
+    width: 20%;
+    height: 20%;
+  }
+
+  .blur-01 {
+    overflow: hidden;
+    width: 100px;
+    height: 200px;
+    top: 20px;
+    left: 0px;
+    filter: blur(100px);
+  }
+}
+
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  color: black;
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+.toggle-icon {
+  vertical-align: middle;
+}
+.toggle-icon mat-icon {
+  position: absolute;
+  top: 650px;
+  left: 40px;
+  vertical-align: middle;
+  font-size: 40px;
+  width: 240px;
+  height: 400px;
+  animation-name: floating;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  25% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(4px, 0);
+  }
+  75% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.toggle-icon {
+  color: white;
+}
+.toggle-checkbox:checked + .toggle-label .toggle-icon {
+  transform: rotate(180deg);
 }
