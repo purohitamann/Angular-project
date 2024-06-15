@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  scroll-behavior: smooth;
   z-index: 0;
 
   /* width: 100%; */
@@ -93,7 +93,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
   .home {
     display: flex;
     flex-direction: column-reverse;
@@ -108,7 +108,7 @@
     max-width: fit-content;
     height: 682px;
     overflow: hidden;
-    /* background-color: #f5f5f5; */
+    margin-top: -170px;
   }
   .info {
     display: flex;
@@ -116,9 +116,15 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-    padding: 20px;
-    margin-left: 0px;
-    margin-top: -90px;
+
+    margin-top: -220px;
+  }
+  .infoDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
   .info h1 {
     font-size: 40px;
@@ -126,7 +132,6 @@
     width: 250px;
 
     align-items: center;
-    /* background-color: #f5f5f5; */
   }
   .info p {
     margin-top: -10px;
