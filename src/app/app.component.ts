@@ -21,7 +21,7 @@ export class AppComponent {
     github: "https://github.com/purohitamann",
     linkedIn: "https://www.linkedin.com/in/amanhiranpurohit/",
   };
-  blurs = ['blur-02', 'blur-06', 'blur-03', 'blur-04', 'blur-05'];
+  blurs = ['blur-01', 'blur-02', 'blur-06', 'blur-03', 'blur-04', 'blur-05'];
   darkMode = false;
   
 }

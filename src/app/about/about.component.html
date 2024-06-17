@@ -18,7 +18,7 @@
   <div>
     <h1>Work Experience</h1>
     <div class="about workExperience">
-      <div *ngFor="let experience of workExperiences">
+      <div *ngFor="let experience of workExperiences" class="heading">
         <h2>{{ experience.title }} at {{ experience.company }}</h2>
         <h3>
           <strong>Location:</strong> {{ experience.location }} ({{

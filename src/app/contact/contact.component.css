@@ -28,3 +28,9 @@
   background-color: #333;
   color: #fff;
 }
+
+@media screen and (max-width: 390px) {
+  .contact {
+    font-size: 26px;
+  }
+}

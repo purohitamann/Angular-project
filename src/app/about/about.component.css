@@ -85,3 +85,45 @@ h1 {
   color: #fff;
   align-content: justify;
 }
+
+@media screen and (max-width: 390px) {
+  #about-div {
+    margin-top: -80px;
+  }
+  .about {
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .imagesDiv {
+    padding: 30px 0px;
+    margin-top: -100px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .workExperience {
+    font-size: 16px;
+  }
+  .workExperience .heading {
+    padding: 20px;
+  }
+}
+
+.blur-02 {
+  background-color: #747474;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  min-width: 500px;
+  overflow: hidden;
+  top: 1476px;
+  left: 88px;
+  border: 764px;
+  filter: blur(200px);
+  z-index: -1;
+}

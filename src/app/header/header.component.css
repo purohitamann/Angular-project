@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -26,10 +26,16 @@
   color: #fff;
 }
 
-a {
+.header a {
   color: black;
+  text-decoration: none;
+  z-index: 3;
 }
 .dark-mode a {
+  color: #fff;
+}
+
+.dark-mode .header a {
   color: #fff;
 }
 
