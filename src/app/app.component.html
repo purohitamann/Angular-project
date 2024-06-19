@@ -33,23 +33,28 @@
     </span>
   </label>
 </div>
-<app-header [darkMode]="darkMode" [location]="location"></app-header>
-<app-home [darkMode]="darkMode" [Info]="info"></app-home>
-<app-about
-  [darkMode]="darkMode"
-  [ngClass]="{ 'dark-mode': darkMode }"
-></app-about>
-<app-project-div
-  [darkMode]="darkMode"
-  [ngClass]="{ 'dark-mode': darkMode }"
-></app-project-div>
-<app-contact [darkMode]="darkMode" [contact]="contact"></app-contact>
-<app-footer
-  [darkMode]="darkMode"
-  [ngClass]="{ 'dark-mode': darkMode }"
-  [name]="name"
-></app-footer>
-
+<div class="container" [ngClass]="{ 'dark-mode': darkMode }">
+  <app-header [darkMode]="darkMode" [location]="location"></app-header>
+  <app-home [darkMode]="darkMode" [Info]="info"></app-home>
+  <app-about
+    [darkMode]="darkMode"
+    [ngClass]="{ 'dark-mode': darkMode }"
+  ></app-about>
+  <app-project-div
+    [darkMode]="darkMode"
+    [ngClass]="{ 'dark-mode': darkMode }"
+  ></app-project-div>
+  <app-contact [darkMode]="darkMode" [contact]="contact"></app-contact>
+  <app-footer
+    [darkMode]="darkMode"
+    [ngClass]="{ 'dark-mode': darkMode }"
+    [name]="name"
+  ></app-footer>
+</div>
 <div class="background">
-  <div *ngFor="let blur of blurs" class="{{ blur }} blurs"></div>
+  <div
+    *ngFor="let blur of blurs"
+    class="{{ blur }} blurs"
+    [ngClass]="{ 'dark-mode': darkMode }"
+  ></div>
 </div>

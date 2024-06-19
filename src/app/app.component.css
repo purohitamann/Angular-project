@@ -34,7 +34,7 @@ body {
   z-index: 1;
 }
 .blur-02 {
-  background-color: #747474;
+  background-color: #dadada;
   position: absolute;
   width: 200px;
   height: 200px;
@@ -93,9 +93,25 @@ body {
   z-index: -1;
 }
 .dark-mode {
-  background-color: #333;
+  background-color: #ffffff;
   color: #fff;
 }
+
+/* .background .blur-02 {
+  background-color: #ce1b1b;
+  z-index: 20;
+}*/
+.background .dark-mode .blur-01,
+.blur-02,
+.blur-03,
+.blur-04,
+.blur-05,
+.blur-06 {
+  background-color: #6b6b6b;
+  color: aquamarine;
+  z-index: 0;
+}
+
 .darkModeBtn {
   position: fixed;
   z-index: 3;
@@ -176,4 +192,7 @@ body {
     width: 100%;
     height: auto;
   }
+}
+.container .dark-mode {
+  z-index: 30;
 }
