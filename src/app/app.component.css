@@ -192,9 +192,6 @@ body {
     width: 100%;
     height: auto;
   }
-  .projectDiv {
-    background-color: orchid;
-  }
 }
 .container .dark-mode {
   z-index: 30;
