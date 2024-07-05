@@ -1,13 +1,28 @@
 <section class="projectDiv" [ngClass]="{ 'dark-mode': darkMode }">
   <div class="container">
     <div id="project" class="header"><h1>Projects</h1></div>
-    <div>
-      <app-project
-        class="project"
-        [darkMode]="darkMode"
-        *ngFor="let project of projects"
-        [project]="project"
-      ></app-project>
+    <div class="searchDiv">
+      <input
+        type="text"
+        class="search"
+        placeholder="Search..."
+        [(ngModel)]="searchText"
+        (ngModelChange)="filterProjects()"
+      />
+      <div *ngIf="dataFound; else noData">
+        <app-project
+          class="project"
+          [darkMode]="darkMode"
+          *ngFor="let project of filteredProjects"
+          [project]="project"
+        ></app-project>
+      </div>
+
+      <ng-template #noData>
+        <div class="noData">
+          <h1>Ops! I'm probably working on this. Stay Tuned;-)</h1>
+        </div>
+      </ng-template>
     </div>
   </div>
 </section>

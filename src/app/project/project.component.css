@@ -1,11 +1,18 @@
 .card {
-  max-width: 300px;
+  max-width: 800px;
+  max-height: 500px;
   z-index: 3;
 }
 .image {
-  background-image: url("./images/git-profile.jpeg");
   background-size: cover;
+  background-image: url("../../assets/images/git-profile.jpeg");
 }
+.cover-image {
+  max-width: 800px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
 .grey-button {
   background-color: #2f3334;
   color: white;
@@ -19,5 +26,13 @@
   color: #fff;
 }
 .mat-card-subtitle.dark-mode {
-  color: #fff; /* White text in dark mode */
+  color: #fff;
+}
+@media screen and (max-width: 390px) {
+  .card {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0px;
+  }
 }

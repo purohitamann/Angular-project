@@ -1,0 +1,40 @@
+{
+  "workHistory": [
+    {
+      "title": "Computer Science Tutor",
+      "company": "Bright Sparkz Tutors",
+      "location": "Burlington, ON",
+      "joining": "April 2024",
+      "endDate": "Present",
+      "description": "Passionate about crafting innovative solutions and enhancing user experiences through software development.• Collaborating with a dynamic team of developers to create and deploy cutting-edge applications and features. • Contributing to the full software development lifecycle, from concept ideation to testing and deployment, ensuring high-quality and scalable solutions.• Continuously learning and adapting to new technologies and methodologies to stay ahead in the rapidly evolving field of software development."
+    },
+    {
+      "title": "Jr. Software Developer",
+      "company": "Skill Squirrel",
+      "location": "Mississauga, ON",
+      "joining": "January 2024",
+      "endDate": "April 2024",
+      "description": "Passionate about crafting innovative solutions and enhancing user experiences through software development.• Collaborating with a dynamic team of developers to create and deploy cutting-edge applications and features. • Contributing to the full software development lifecycle, from concept ideation to testing and deployment, ensuring high-quality and scalable solutions.• Continuously learning and adapting to new technologies and methodologies to stay ahead in the rapidly evolving field of software development."
+    },
+    {
+      "title": "Computer Science Tutor",
+      "company": "Bright Sparkz Tutors",
+      "location": "Burlington, ON",
+      "joining": "April 2024",
+      "endDate": "Present",
+      "description": "Passionate about crafting innovative solutions and enhancing user experiences through software development.• Collaborating with a dynamic team of developers to create and deploy cutting-edge applications and features. • Contributing to the full software development lifecycle, from concept ideation to testing and deployment, ensuring high-quality and scalable solutions.• Continuously learning and adapting to new technologies and methodologies to stay ahead in the rapidly evolving field of software development."
+    }
+  ],
+  "img": [
+    "assets/skills/angular-01.jpg",
+    "assets/skills/Tech-Stack-aws.png",
+    "assets/skills/Tech-Stack-css.png",
+    "assets/skills/db.png",
+    "assets/skills/figma.png",
+    "assets/skills/Tech-Stack-html.png",
+    "assets/skills/Tech-Stack-java.png",
+    "assets/skills/Tech-Stack-js.png",
+    "assets/skills/Tech-Stack-react.png",
+    "assets/skills/Tech-Stack-sass.png"
+  ]
+}

@@ -109,7 +109,7 @@ body {
 .blur-06 {
   background-color: #6b6b6b;
   color: aquamarine;
-  z-index: 0;
+  z-index: -1;
 }
 
 .darkModeBtn {
@@ -191,6 +191,9 @@ body {
   .blur-06 {
     width: 100%;
     height: auto;
+  }
+  .projectDiv {
+    background-color: orchid;
   }
 }
 .container .dark-mode {
