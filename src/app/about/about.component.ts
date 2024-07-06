@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import data from '../../data/aboutData.json';
+import data from '../../data/content.json';
 
 @Component({
   selector: 'app-about',

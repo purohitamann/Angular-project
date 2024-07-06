@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import projectData from '../../data/data.json';
+import projectData from '../../data/project.json';
 import { Project } from '../project-div/project.model';
 @Component({
   selector: 'app-project-div',
@@ -7,7 +7,7 @@ import { Project } from '../project-div/project.model';
   styleUrls: ['./project-div.component.css']
 })
 export class ProjectDivComponent {
-  projects:Project[] = projectData;
+  projects:Project[] = projectData.projects;
   filteredProjects: Project[] = this.projects;
   @Input() darkMode!: boolean;
   searchText: string = '';

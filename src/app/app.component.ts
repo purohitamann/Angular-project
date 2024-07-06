@@ -1,5 +1,5 @@
 import { Component ,Renderer2, Inject } from '@angular/core';
-import myInfo from '../data/myInfo.json';
+import data from '../data/content.json';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +8,10 @@ import myInfo from '../data/myInfo.json';
 })
 export class AppComponent {
   title = 'portfolio';
-  contact = myInfo.contact;
+  contact = data.contact;
   name="Aman Hiran Purohit";
   location="Burlington, ON Canada";
-  info = myInfo.info;
+  info = data.info;
   blurs = ['blur-01', 'blur-02', 'blur-06', 'blur-03', 'blur-04', 'blur-05'];
   darkMode = false;
-
-  
 }
