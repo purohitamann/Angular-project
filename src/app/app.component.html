@@ -11,19 +11,13 @@
     class="toggle-checkbox"
   />
   <label for="darkMode" class="toggle-label">
-    <!-- <span class="toggle-icon">
-      <mat-icon *ngIf="!darkMode">brightness_7</mat-icon>
-
-      <mat-icon *ngIf="darkMode">brightness_2</mat-icon>
-
-    </span> -->
     <span class="toggle-icon">
       <mat-icon
         *ngIf="!darkMode"
         [ngStyle]="{ color: darkMode ? 'white' : 'black' }"
         >brightness_7</mat-icon
       >
-      <!-- Sun icon -->
+
       <mat-icon
         *ngIf="darkMode"
         [ngStyle]="{ color: darkMode ? 'white' : 'black' }"
@@ -42,6 +36,7 @@
   ></app-about>
   <app-project-div
     [darkMode]="darkMode"
+    [projectData]="projectData"
     [ngClass]="{ 'dark-mode': darkMode }"
   ></app-project-div>
   <app-contact [darkMode]="darkMode" [contact]="contact"></app-contact>

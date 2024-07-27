@@ -2,6 +2,14 @@
   "projects": [
     {
       "id": 1,
+      "title": "Creator Verse",
+      "subtitle": "list your favorite creators",
+      "imageUrl": "/assets/images/demo.gif",
+      "url": "https://github.com/purohitamann/creatorverse",
+      "description": "Creatorverse is a dynamic front end project built to showcase and manage a collection of your favorite content creators, including YouTube channels, Instagram personalities, TikTok accounts, and more. This app allows users to create, read, update, and delete (CRUD) content creators"
+    },
+    {
+      "id": 2,
       "title": "Swiftie Meter",
       "subtitle": "how swiftie are you?",
       "imageUrl": "/assets/images/SwiftieMeter.png",
@@ -9,7 +17,7 @@
       "description": "Discover how much of a Taylor Swift fan you are with the Swiftie Meter! This interactive tool analyzes your music preferences and social media to rate your Swiftie level."
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Caption AI",
       "subtitle": "need a caption for your instagram post?",
       "imageUrl": "/assets/images/CaptionAI.png",
@@ -17,7 +25,7 @@
       "description": "Struggle no more for the perfect Instagram caption! Caption AI uses advanced machine learning to generate creative and engaging captions for your photos."
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "AstroGen AI",
       "subtitle": "check out what is happening for sign?",
       "imageUrl": "/assets/images/AstroGen.png",
@@ -25,7 +33,7 @@
       "description": "Curious about your astrological future? AstroGen AI provides daily horoscope predictions powered by AI, tailored specifically to your zodiac sign."
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Cafe Checkout System",
       "subtitle": "let me help your business checkout!",
       "imageUrl": "/assets/images/Cafe.png",

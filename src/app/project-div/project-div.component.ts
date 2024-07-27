@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import projectData from '../../data/project.json';
+import  ProjectData  from '../../data/project.json';
 import { Project } from '../project-div/project.model';
 @Component({
   selector: 'app-project-div',
@@ -7,13 +7,16 @@ import { Project } from '../project-div/project.model';
   styleUrls: ['./project-div.component.css']
 })
 export class ProjectDivComponent {
-  projects:Project[] = projectData.projects;
-  filteredProjects: Project[] = this.projects;
+  @Input() projectData!: { projects: Project[] };
+   filteredProjects: Project[] = [];
   @Input() darkMode!: boolean;
   searchText: string = '';
   dataFound: boolean = true;
+  ngOnInit() {
+    this.filteredProjects = this.projectData.projects;
+  }
   filterProjects() {
-    this.filteredProjects = this.projects.filter(projects =>
+    this.filteredProjects = this.projectData.projects.filter(projects =>
       projects.title.toLowerCase().includes(this.searchText.toLowerCase())
     );
    
