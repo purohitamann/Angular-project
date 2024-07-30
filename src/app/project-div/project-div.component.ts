@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import  ProjectData  from '../../data/project.json';
+import  ProjectData  from '../../assets/data/project.json';
 import { Project } from '../project-div/project.model';
 @Component({
   selector: 'app-project-div',

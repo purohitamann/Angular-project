@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import data from '../../data/content.json';
+import data from '../../assets/data/content.json';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +7,9 @@ import data from '../../data/content.json';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  skillsImages: string[] = data.img;
-  workExperiences = data.workHistory;
+ 
   @Input() darkMode!: boolean;
+  @Input() data!: any;
+  skillsImages: string[] | null = data.img;
+  workExperiences = data.workHistory;
 }

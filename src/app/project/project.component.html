@@ -20,6 +20,15 @@
     <a mat-raised-button class="grey-button" [href]="project.url"
       >View On Github</a
     >
+    <button
+      mat-icon-button
+      color="black"
+      [id]="project.id"
+      class="iconsize"
+      (click)="likeCard(project.id)"
+    >
+      <mat-icon>favorite</mat-icon>
+    </button>
   </mat-card-actions>
 </mat-card>
 <script>

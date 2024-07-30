@@ -1,19 +1,41 @@
 import { Component ,Renderer2, Inject } from '@angular/core';
-import data from '../data/content.json';
-import projectData from '../data/project.json';
+// import data from '../assets/data/content.json';
+// import projectData from '../assets/data/project.json'; 
 import { Project } from './project-div/project.model';
+import { OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+ 
   title = 'portfolio';
-  projectData:{projects:Project[]} = projectData;
-  contact = data.contact;
-  name=data.info.title;
-  location=data.info.location;
-  info = data.info;
-  blurs = data.info.blurs;
+  projectData: { projects: Project[] } | null = null;
+  contact: any = null;
+  name: string | null = null;
+  location: string | null = null;
+  info: any = null;
+  blurs: any = null;
   darkMode = false;
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit() {
+    this.getData();
+  }
+
+  getData() {
+    let url = '../assets/data/content.json';
+    this.http.get(url).subscribe((res: any) => {
+      this.projectData = { projects: res.projects };
+      this.contact = res.contact;
+      this.name = res.info.title;
+      this.location = res.info.location;
+      this.info = res.info;
+      this.blurs = res.info.blurs;
+      // console.log(res);
+    });
+  }
 }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 ;
 import {MatTabsModule} from '@angular/material/tabs';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,11 @@ import { ProjectComponent } from './project/project.component';
 import { ProjectDivComponent } from './project-div/project-div.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+
+import { LikeButtonService } from './like-button.service';
+import {HttpClientModule} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,10 +39,12 @@ import { FooterComponent } from './footer/footer.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
+
     
     
   ],
-  providers: [],
+  providers: [provideClientHydration(), LikeButtonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

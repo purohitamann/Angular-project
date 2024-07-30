@@ -28,7 +28,7 @@
   </label>
 </div>
 <div class="container" [ngClass]="{ 'dark-mode': darkMode }">
-  <app-header [darkMode]="darkMode" [location]="location"></app-header>
+  <app-header [darkMode]="darkMode" [location]="location ?? ''"></app-header>
   <app-home [darkMode]="darkMode" [Info]="info"></app-home>
   <app-about
     [darkMode]="darkMode"
@@ -36,14 +36,14 @@
   ></app-about>
   <app-project-div
     [darkMode]="darkMode"
-    [projectData]="projectData"
+    [projectData]="projectData ?? { projects: [] }"
     [ngClass]="{ 'dark-mode': darkMode }"
   ></app-project-div>
   <app-contact [darkMode]="darkMode" [contact]="contact"></app-contact>
   <app-footer
     [darkMode]="darkMode"
     [ngClass]="{ 'dark-mode': darkMode }"
-    [name]="name"
+    [name]="name ?? ''"
   ></app-footer>
 </div>
 <div class="background">

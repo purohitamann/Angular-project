@@ -28,6 +28,9 @@
 .mat-card-subtitle.dark-mode {
   color: #fff;
 }
+button {
+  margin-left: 10px;
+}
 @media screen and (max-width: 390px) {
   .card {
     width: 50%;
