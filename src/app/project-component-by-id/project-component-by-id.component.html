@@ -1,0 +1,15 @@
+<div class="container" [class]="['/project', projectData.id]">
+  <div class="header">
+    <h1>{{ projectData.title }}</h1>
+    <div class="close" (click)="close()"><h3>X</h3></div>
+  </div>
+  <div class="body">
+    <img [src]="projectData.imageUrl" alt="{{ projectData.title }}" />
+    <p>{{ projectData.description }}</p>
+  </div>
+  <div class="footer">
+    <div class="button">
+      <a [href]="projectData.url" target="_blank">View on Github</a>
+    </div>
+  </div>
+</div>
