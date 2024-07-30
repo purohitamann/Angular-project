@@ -19,23 +19,32 @@ export class AppComponent {
   info: any = null;
   blurs: any = null;
   darkMode = false;
+  aboutData: any = null;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.getData();
+    this.getProjectData();
   }
 
   getData() {
     let url = '../assets/data/content.json';
     this.http.get(url).subscribe((res: any) => {
-      this.projectData = { projects: res.projects };
+     
       this.contact = res.contact;
       this.name = res.info.title;
       this.location = res.info.location;
       this.info = res.info;
       this.blurs = res.info.blurs;
+      this.aboutData=res;
       // console.log(res);
+    });
+  }
+  getProjectData() {
+    let url = '../assets/data/project.json';
+    this.http.get(url).subscribe((res: any) => {
+      this.projectData = { projects: res.projects}; 
     });
   }
 }
