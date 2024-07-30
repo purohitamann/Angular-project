@@ -15,11 +15,13 @@ import { ProjectComponent } from './project/project.component';
 import { ProjectDivComponent } from './project-div/project-div.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-
+import {Routes, RouterModule} from '@angular/router';
 import { LikeButtonService } from './like-button.service';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpClient} from '@angular/common/http';
-
+const routes: Routes = [
+  { path: 'project/:id', component: ProjectDivComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +42,7 @@ import {HttpClient} from '@angular/common/http';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    RouterModule.forRoot(routes)
 
     
     
@@ -47,4 +50,7 @@ import {HttpClient} from '@angular/common/http';
   providers: [provideClientHydration(), LikeButtonService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
+

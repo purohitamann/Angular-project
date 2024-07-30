@@ -15,6 +15,7 @@
           [darkMode]="darkMode"
           *ngFor="let project of filteredProjects"
           [project]="project"
+          [routerLink]="['/project', project.id]"
         ></app-project>
       </div>
 
