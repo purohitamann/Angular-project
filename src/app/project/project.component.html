@@ -20,6 +20,13 @@
     <a mat-raised-button class="grey-button" [href]="project.url"
       >View On Github</a
     >
+    <a
+      mat-raised-button
+      class="grey-button"
+      [href]="['#/project', project.id]"
+      [routerLink]="['/project', project.id]"
+      >View Details</a
+    >
     <button
       mat-icon-button
       color="black"

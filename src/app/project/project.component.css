@@ -16,6 +16,7 @@
 .grey-button {
   background-color: #2f3334;
   color: white;
+  margin-right: 10px;
 }
 .dark-mode {
   background-color: #333;
@@ -28,9 +29,7 @@
 .mat-card-subtitle.dark-mode {
   color: #fff;
 }
-button {
-  margin-left: 10px;
-}
+
 @media screen and (max-width: 390px) {
   .card {
     width: 50%;

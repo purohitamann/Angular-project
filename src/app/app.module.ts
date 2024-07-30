@@ -19,8 +19,11 @@ import {Routes, RouterModule} from '@angular/router';
 import { LikeButtonService } from './like-button.service';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpClient} from '@angular/common/http';
+import { ProjectComponentByIdComponent } from './project-component-by-id/project-component-by-id.component';
+import { MainComponent } from './main/main.component';
 const routes: Routes = [
-  { path: 'project/:id', component: ProjectDivComponent },
+  { path: '', component: MainComponent} ,
+   { path: 'project/:id', component: ProjectComponentByIdComponent },
 ];
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ const routes: Routes = [
     ProjectComponent,
     ProjectDivComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
