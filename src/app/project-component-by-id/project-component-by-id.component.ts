@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class ProjectComponentByIdComponent {
   constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) {}
   projectUrl: any ;
-  projectId: any = this.route.snapshot.paramMap.get('id')|| 1;
+  projectId: any = this.route.snapshot.paramMap.get('id') || 1;
   projectData: any;
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
