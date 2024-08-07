@@ -26,6 +26,7 @@ export class ProjectComponentByIdComponent {
     this.http.get(url).subscribe((res: any) => {
       this.projectData = filterProjectsById(res.projects, this.projectId);
       console.log(this.projectData);
+      console.log(this.projectUrl);
      
     });
   }
