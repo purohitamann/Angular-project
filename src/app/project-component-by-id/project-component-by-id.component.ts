@@ -31,6 +31,7 @@ export class ProjectComponentByIdComponent {
   }
   close(){
     this.router.navigate(['/']);
+    console.log(this.projectUrl);
   }
 }
 
