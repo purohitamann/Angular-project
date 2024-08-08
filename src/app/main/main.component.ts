@@ -13,7 +13,7 @@ import { HttpClient } from '@angular/common/http';
 export class MainComponent {
   title = 'portfolio';
   projectData: { projects: Project[] } | null = null;
-  contact: any = null;
+  // contact: any = null;
   name: string | null = null;
   location: string | null = null;
   info: any = null;
@@ -32,7 +32,7 @@ export class MainComponent {
     let url = '../assets/data/content.json';
     this.http.get(url).subscribe((res: any) => {
      
-      this.contact = res.contact;
+      // this.contact = res.contact;
       this.name = res.info.title;
       this.location = res.info.location;
       this.info = res.info;

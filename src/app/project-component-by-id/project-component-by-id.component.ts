@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router'; // documentation provided in comments
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 @Component({
@@ -31,7 +31,7 @@ export class ProjectComponentByIdComponent {
     });
   }
   close(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/']);//documentation provided in comments
     console.log(this.projectUrl);
   }
 }

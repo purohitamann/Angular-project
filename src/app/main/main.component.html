@@ -33,7 +33,7 @@
   </label>
 </div>
 <div class="container" [ngClass]="{ 'dark-mode': darkMode }">
-  <app-header [darkMode]="darkMode" [location]="location ?? ''"></app-header>
+  <!-- <app-header [darkMode]="darkMode" [location]="location ?? ''"></app-header> -->
   <app-home [darkMode]="darkMode" [Info]="info"></app-home>
   <app-about
     [darkMode]="darkMode"
@@ -45,12 +45,13 @@
     [projectData]="projectData ?? { projects: [] }"
     [ngClass]="{ 'dark-mode': darkMode }"
   ></app-project-div>
-  <app-contact [darkMode]="darkMode" [contact]="contact"></app-contact>
-  <app-footer
+  <app-contact [darkMode]="darkMode"></app-contact>
+  <!-- [contact]="contact" -->
+  <!-- <app-footer
     [darkMode]="darkMode"
     [ngClass]="{ 'dark-mode': darkMode }"
     [name]="name ?? ''"
-  ></app-footer>
+  ></app-footer> -->
 </div>
 <div class="background">
   <div

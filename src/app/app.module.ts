@@ -24,6 +24,10 @@ import { MainComponent } from './main/main.component';
 const routes: Routes = [
   { path: '', component: MainComponent} ,
    { path: 'project/:id', component: ProjectComponentByIdComponent },
+   { path: 'contact', component: ContactComponent },
+   {path: 'about', component: AboutComponent},
+   {path: 'home', component: HomeComponent},
+   {path: 'project', component: ProjectDivComponent},
 ];
 @NgModule({
   declarations: [

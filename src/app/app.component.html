@@ -1,1 +1,7 @@
+<app-header [darkMode]="darkMode" [location]="location ?? ''"></app-header>
 <router-outlet></router-outlet>
+<app-footer
+  [darkMode]="darkMode"
+  [ngClass]="{ 'dark-mode': darkMode }"
+  [name]="name ?? ''"
+></app-footer>
