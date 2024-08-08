@@ -1,0 +1,53 @@
+{
+  "workHistory": [
+    {
+      "title": "Frontend Developer Intern",
+      "company": "Zeuty",
+      "location": "Waterloo, ON",
+      "joining": "April 2024",
+      "endDate": "Present",
+      "description": "Utilized React Native for building cross-platform mobile apps, ensuring consistent performance on both iOS and Android devices. • Adapted to changing project requirements and priorities, demonstrating flexibility and a proactive approach to problem-solving. • Engaged in collaborative problem-solving and code reviews to maintain high-quality code standards and share knowledge within the team."
+    },
+    {
+      "title": "Jr. Software Developer",
+      "company": "Skill Squirrel",
+      "location": "Mississauga, ON",
+      "joining": "January 2024",
+      "endDate": "April 2024",
+      "description": "Passionate about crafting innovative solutions and enhancing user experiences through software development. • Collaborating with a dynamic team of developers to create and deploy cutting-edge applications and features. • Contributing to the full software development lifecycle, from concept ideation to testing and deployment, ensuring high-quality and scalable solutions. • Continuously learning and adapting to new technologies and methodologies to stay ahead in the rapidly evolving field of software development."
+    },
+    {
+      "title": "Computer Science Tutor",
+      "company": "Bright Sparkz ",
+      "location": "Burlington, ON",
+      "joining": "April 2024",
+      "endDate": "Present",
+      "description": "Assessed students' progress regularly through quizzes, assignments, and feedback sessions, adapting teaching methods to enhance their understanding and performance. • Provided personalized tutoring sessions for students, addressing their specific needs and learning styles in computer science topics."
+    }
+  ],
+  "img": [
+    "assets/skills/angular-01.jpg",
+    "assets/skills/Tech-Stack-aws.png",
+    "assets/skills/Tech-Stack-css.png",
+    "assets/skills/db.png",
+    "assets/skills/figma.png",
+    "assets/skills/Tech-Stack-html.png",
+    "assets/skills/Tech-Stack-java.png",
+    "assets/skills/Tech-Stack-js.png",
+    "assets/skills/Tech-Stack-react.png",
+    "assets/skills/Tech-Stack-sass.png"
+  ],
+  "contact": {
+    "title": "Contact",
+    "p": "Enjoyed exploring my portfolio? If you appreciate my work, I'd be grateful for your endorsement on LinkedIn. Your support means the world! Don't forget to connect with me on LinkedIn too—I'd love to stay in touch and explore potential collaborations. Thank you for taking the time to review my portfolio. I'd love to hear from you!",
+    "connectURL": "https://www.linkedin.com/in/amanhiranpurohit/"
+  },
+  "info": {
+    "title": "Aman Hiran Purohit",
+    "location": "Burlington, ON",
+    "p": "Hello! I'm a Software & Network Major at Sheridan College in Oakville, actively seeking Co-op opportunities in tech for Fall 2024. I showcase my work on my projects and blog on this platform. If you find my work intriguing, feel free to connect with me or endorse my skills.",
+    "github": "https://github.com/purohitamann",
+    "linkedIn": "https://www.linkedin.com/in/amanhiranpurohit/",
+    "blurs": ["blur-01", "blur-02", "blur-06", "blur-03", "blur-04", "blur-05"]
+  }
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router'; // documentation provided in comments
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 @Component({
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class ProjectComponentByIdComponent {
   constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) {}
   projectUrl: any ;
-  projectId: any = this.route.snapshot.paramMap.get('id')|| 1;
+  projectId: any = this.route.snapshot.paramMap.get('id') || 1;
   projectData: any;
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -26,11 +26,13 @@ export class ProjectComponentByIdComponent {
     this.http.get(url).subscribe((res: any) => {
       this.projectData = filterProjectsById(res.projects, this.projectId);
       console.log(this.projectData);
+      console.log(this.projectUrl);
      
     });
   }
   close(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/']);//documentation provided in comments
+    console.log(this.projectUrl);
   }
 }
 
